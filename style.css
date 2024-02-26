@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+html{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+h2{
+    text-transform: capitalize;
+}
+header{
+    background-color: aliceblue;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 2vh;
+    padding: 0 2vh;
+    
+}
+.taps{
+    display: flex;
+    flex-direction: row;
+}
+header .social-links{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+header .social-links span{
+    height: 8vh;
+    width: 8vh;
+    background-color: aqua;
+    border-radius: 50%;
+    display: flex;
+    transition: all 0.2s;
+}
+header .social-links img{
+    height: 7vh;
+    width: 7vh;
+    margin: auto;
+    cursor: pointer;
+}
+header .social-links span:hover{
+    background-color: aliceblue;
+    scale: 1.05;
+}
+
+header .social-links .insta {
+    height: 8vh;
+    width: 8vh;
+    margin: auto;
+}
+header a {
+    margin: 20px 10px;
+    height: 33px;
+    width: 70px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    color: black;
+    border: 1px solid black;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    box-shadow: 2px 10px 25px rgba(56, 89, 143, 0.433),
+    2px 5px 10px rgba(56, 89, 143, 0.433);
+    backdrop-filter: blur(25px);
+}
+header a:hover{
+    color: white;
+}
+header a::after{
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: -7%;
+    height: 40px;
+    width: 80px;
+    background-color: black;
+    transition: all 0.4s;
+    border-radius: 18px;
+}
+header a:hover::after{
+    top: -1px;
+    mix-blend-mode: color;
+    
+}
+header .taps img{
+    display: none;
+}
+.container{
+    height: 100vh;
+    background: url(https://www.holidify.com/images/cmsuploads/compressed/Pashupatinathtemple_20180710134958.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.title{
+    height: 100%;
+    display: flex;
+    gap: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+.title>a{
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 2vw;
+    height: 8vh;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.3s;
+    position: relative;
+}
+.title>a:nth-child(1){
+    background-color: rgba(60, 183, 99, 0.852);
+    color: aliceblue;
+}
+.title>a:nth-child(2){
+    background-color: rgba(39, 144, 225, 0.821);
+    color: aliceblue;
+}
+.title>a:hover{
+    color: black;
+    background-color: white;
+    scale: 1.01;
+}
+.about{
+    padding-top: 3%;
+    
+}
+
+.about>h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    margin-bottom: 1%;
+    padding: 2vh;
+}
+.about .about-content{
+    display: flex;
+    min-height: 75vh;
+    margin: 3vh;
+    border-radius: 8px;
+    background-color: rgba(7, 18, 74, 0.026);
+    box-shadow: 10px 15px 15px rgba(93, 112, 233, 0.271),
+    10px 15px 15px rgba(93, 112, 233, 0.271),
+    10px 15px 15px rgba(93, 112, 233, 0.271) inset;
+    overflow: hidden;
+}
+.about .about-content p{
+    width: 50%;
+    padding: 3vh;
+    
+}
+.about .about-content p span{
+    font-size: 40px;
+}
+.about .about-content img{
+    width: 50%;
+    padding: 2%;
+    transition: all 0.1s;
+    border-radius: 40px;
+}
+.about .about-content img:hover{
+    scale: 1.03;
+}
+.specialty-title{
+    font-weight: bolder;
+    font-size: larger;
+}
+.specialty>h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    margin-bottom: 1%;
+    padding: 2vh;
+}
+.specialty-box{
+    border: 0.1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+
+
+
+
+.how-to-reach>h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    margin-bottom: 1%;
+    padding: 2vh;
+}
+.how-to-reach-content{
+    padding: 2vh;
+    margin: 3vh;
+    border-radius: 8px;
+    background-color: rgba(7, 18, 74, 0.026);
+    box-shadow: 10px 15px 15px rgba(93, 112, 233, 0.271),
+    10px 15px 15px rgba(93, 112, 233, 0.271),
+    10px 15px 15px rgba(93, 112, 233, 0.271) inset;
+    min-height: 80vh;
+    width: 95vw;
+}
+.how-to-reach .how-to-reach-content h3{
+    margin: 1.5vh 0 0 0;
+}
+.how-to-reach .how-to-reach-content p{
+    margin: 1vh 0;
+}
+.how-to-reach .how-to-reach-content p span{
+    padding: 2px;
+    color: white;
+    position: relative;
+    top: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgba(42, 42, 176, 0.815);
+    transition: all 0.1s;
+}
+.how-to-reach .how-to-reach-content p span:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+.how-to-reach .how-to-reach-content li{
+    margin-left: 2.2vh;
+}
+.personality {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 2vh;
+}
+.personality h4{
+    font-weight: bold;
+}
+.box-container h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+    padding: 2vh;
+}
+.card-body h5{
+    font-weight: bold;
+}
+.card{
+    margin: 2vh;
+}
+.card img{
+    height: 250px;
+}
+.box:hover{
+    background-color: #ccc;
+}
+.ktm-map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+    height: 65vh;
+}
+
+iframe{
+    height: 60vh;
+    width: 100%;
+    margin-top: 5vh;
+}
+footer{
+    background-color: #ccc;
+    height: 8vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+footer p{
+    margin: auto;
+    font-size: 12px;
+}
+.nav-tabs{
+    display:none;
+}
+.open-nav{
+    display: none;
+}
+.close-nav{
+    display: none;
+}
+
+
+ /* Media query for screens smaller than 768px */
+@media (max-width: 788px) {
+    header .taps{
+        display: none;
+    }
+    header .nav-tabs{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+        top: 8vh;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        backdrop-filter: blur(15px);
+        background-color: #ffffff8c;
+    }
+    .close-nav{
+        height: 7vh;
+        width: 7vh;
+    }
+    .open-nav{
+        display: block;
+    }
+    header .open-nav{
+        height: 7vh;
+        width: 7vh;
+    }
+    .about-content{
+        flex-direction: column-reverse;
+    }
+    .about-content p{
+        min-width: 100%;
+    }
+    .about-content img{
+        min-width: 100%;
+    }
+}
+
+/* Media query for screens smaller than 480px */
+
+
